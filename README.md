@@ -1,16 +1,84 @@
-# React + Vite
+# Hub UpSkill – Global Solution (WebDev)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para a disciplina de Web Development da FIAP, utilizando React com Vite e seguindo todos os requisitos técnicos solicitados no documento oficial da Global Solution.
 
-Currently, two official plugins are available:
+O objetivo do projeto é criar uma plataforma simples de cursos (Hub UpSkill), com foco em navegação, consumo de API, gerenciamento de estado, favoritos e armazenamento local. Toda a interface segue um tema escuro com detalhes em vermelho, inspirado no visual da FIAP.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Integrantes do grupo
 
-## React Compiler
+- Gabriel Juarez
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Deploy
 
-## Expanding the ESLint configuration
+A aplicação está disponível em:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://hub-upskill-fiap.vercel.app
+
+## Funcionalidades do projeto
+
+- Página inicial apresentando o Hub.
+- Lista de cursos consumindo dados de uma API criada no MockAPI.
+- Página de detalhes do curso usando rota dinâmica.
+- Sistema de favoritos utilizando localStorage.
+- Página de favoritos com os cursos salvos.
+- Página de perfil armazenando dados localmente.
+- Componentização com props, estados e hooks personalizados.
+- Rotas configuradas com React Router DOM.
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- JavaScript
+- React Router DOM
+- MockAPI
+- localStorage
+- Vercel
+- GitHub
+
+## Como rodar o projeto localmente
+
+1. Clonar o repositório:
+```
+git clone https://github.com/gjrzz/hub-upskill-fiap.git
+```
+
+2. Entrar na pasta:
+```
+cd hub-upskill-fiap
+```
+
+3. Instalar dependências:
+```
+npm install
+```
+
+4. Iniciar o servidor:
+```
+npm run dev
+```
+
+O projeto ficará disponível em:
+http://localhost:5173/
+
+## Estrutura do projeto
+
+
+src/
+─ components/
+  ─ CourseCard.jsx
+  ─ hooks/
+   ─ useFavorites.js
+  ─ pages/
+     ─ Home.jsx
+     ─ Courses.jsx
+     ─ CourseDetail.jsx
+     ─ Favorites.jsx
+     ─ Profile.jsx             
+  ─ services/
+      ─ api.js
+  ─ App.jsx
+  ─ main.jsx
+
+
+## valeu
